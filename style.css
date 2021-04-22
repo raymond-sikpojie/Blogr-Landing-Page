@@ -4,12 +4,16 @@
   padding: 0;
 }
 
+.section-1 {
+  background-image: url("images/bg-pattern-intro.svg");
+}
+
 nav {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 .menu-buttons {
@@ -42,9 +46,7 @@ li span {
 
 li ul {
   position: absolute;
-  /* top: 65px; */
   visibility: hidden;
-  /* opacity: 0; */
   /* transition: all 0.5s ease; */
   margin-top: 16px;
 }
@@ -55,9 +57,38 @@ li:hover ul {
 
 li ul li {
   padding-top: 10px;
-  /* clear: both;
-  width: 100%; */
 }
 
 .auth-buttons {
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.section-1 .main-heading {
+  margin-bottom: 30px;
+}
+
+.section-1 .sub-heading {
+  margin-bottom: 50px;
+}
+
+.section-1 .button__container {
+  margin-bottom: 40px;
+}
+
+.section-1 .button__container button {
+  padding: 15px;
+  border: none;
+  border-radius: 40px;
+  background-color: transparent;
+}
+
+.section-1 .button__container button:nth-child(1) {
+  background-color: white;
+  color: orangered;
 }
