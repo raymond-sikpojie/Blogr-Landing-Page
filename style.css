@@ -5,9 +5,9 @@
 }
 
 .section-1 {
-  background-image: url(/images/bg-pattern-intro.svg);
-  background-position: -65vh -88vw;
-  /* background-repeat: no-repeat; */
+  background-image: url(/images/bg-pattern-intro.svg),
+    linear-gradient(to right, #ff8f70, #ff3d54);
+  background-position: -65vh -88vw, center;
 }
 
 nav {
