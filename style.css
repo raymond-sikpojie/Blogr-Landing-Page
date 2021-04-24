@@ -5,11 +5,14 @@
 }
 
 .section-1 {
-  background-image: url("images/bg-pattern-intro.svg");
+  background-image: url(/images/bg-pattern-intro.svg);
+  background-position: -65vh -88vw;
+  /* background-repeat: no-repeat; */
 }
 
 nav {
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -91,4 +94,10 @@ li ul li {
 .section-1 .button__container button:nth-child(1) {
   background-color: white;
   color: orangered;
+}
+
+/* Section 2 */
+.section-2 {
+  min-height: 50vh;
+  background-image: url(/images/);
 }
