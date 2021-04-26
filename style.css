@@ -169,6 +169,7 @@ li ul li {
 .section-2 h2,
 h3 {
   color: #1f3f5b;
+  font-size: 1.3rem;
 }
 
 .section-2 p {
@@ -273,10 +274,10 @@ h3 {
 }
 
 .section-4 h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   /* color: #ffffff; */
-  padding: 10px 90px;
-  margin-top: 20px;
+  padding: 0 90px;
+  margin-top: 30px;
 }
 
 .section-4 p {
@@ -298,6 +299,38 @@ h3 {
 }
 
 .section-4 img {
-  /* width: 90%; */
   height: 80vh;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #25252d;
+  padding: 80px;
+}
+
+footer h3 {
+  font-size: 2rem;
+}
+
+footer .title,
+.category {
+  color: white;
+  margin-bottom: 20px;
+}
+
+footer li {
+  color: #c8c8cb;
+  margin-bottom: 15px;
+}
+
+.attribution {
+  font-size: 1rem;
+}
+.attribution a {
+  text-decoration: none;
+  color: #ff3d54;
+  padding: 10px;
 }
