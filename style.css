@@ -8,7 +8,7 @@
   background-image: url(/images/bg-pattern-intro.svg),
     linear-gradient(to right, #ff8f70, #ff3d54);
   background-position: -60vh -95vw, center;
-  border-radius: 0 0 0 100px;
+  border-radius: 0 0 0 110px;
   min-height: 65vh;
 }
 
@@ -168,12 +168,12 @@ li ul li {
 
 .section-2 h2,
 h3 {
-  color: #1f3f5b;
+  color: #4b5862;
   font-size: 1.3rem;
 }
 
 .section-2 p {
-  color: #000000;
+  color: #4b5862;
   margin-top: 20px;
 }
 
@@ -275,12 +275,13 @@ h3 {
 
 .section-4 h3 {
   font-size: 1.3rem;
-  /* color: #ffffff; */
+  color: #4b5862;
   padding: 0 90px;
   margin-top: 30px;
 }
 
 .section-4 p {
+  color: #4b5862;
   font-size: 1rem;
   margin-top: 20px;
   padding: 10px 90px;
@@ -302,35 +303,40 @@ h3 {
   height: 80vh;
 }
 
-/* Footer */
 footer {
+  background-color: #25252d;
+}
+
+/* Footer */
+.footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #25252d;
   padding: 80px;
+  border-radius: 0 80px 0 0;
 }
 
-footer h3 {
+.footer h3 {
   font-size: 2rem;
 }
 
-footer .title,
+.footer .title,
 .category {
   color: white;
   margin-bottom: 20px;
 }
 
-footer li {
-  color: #c8c8cb;
+.footer li {
+  color: #ffffff;
   margin-bottom: 15px;
 }
 
 .attribution {
   font-size: 1rem;
+  color: #ffffff;
+  padding: 10px;
 }
 .attribution a {
   text-decoration: none;
   color: #ff3d54;
-  padding: 10px;
 }
