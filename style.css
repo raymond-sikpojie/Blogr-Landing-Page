@@ -4,11 +4,23 @@
   padding: 0;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+h2,
+h3 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+p {
+  font-family: "Overpass", sans-serif;
+}
+
 .section-1 {
   background-image: url(/images/bg-pattern-intro.svg),
     linear-gradient(to right, #ff8f70, #ff3d54);
   background-position: -60vh -95vw, center;
-  border-radius: 0 0 0 110px;
+  border-radius: 0 0 0 80px;
   min-height: 65vh;
 }
 
@@ -210,10 +222,13 @@ h3 {
   font-size: 1rem;
 }
 
-.container div:nth-child(2) img {
+.container div:nth-child(2) .illustration-desktop {
   height: 700px;
 }
 
+.container div:nth-child(2) .illustration-mobile {
+  display: none;
+}
 /* Section 3 */
 
 .section-3 {
@@ -305,6 +320,7 @@ h3 {
 
 footer {
   background-color: #25252d;
+  border-radius: 0 70px 0 0;
 }
 
 /* Footer */
@@ -313,7 +329,6 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   padding: 80px;
-  border-radius: 0 80px 0 0;
 }
 
 .footer h3 {
@@ -327,7 +342,7 @@ footer {
 }
 
 .footer li {
-  color: #ffffff;
+  color: #ffffffb4;
   margin-bottom: 15px;
 }
 
@@ -339,4 +354,190 @@ footer {
 .attribution a {
   text-decoration: none;
   color: #ff3d54;
+}
+
+/* Mobile view */
+@media screen and (max-width: 720px) {
+  .section-1 {
+    background-image: url(/images/bg-pattern-intro.svg),
+      linear-gradient(to right, #ff8f70, #ff3d54);
+    background-position: -65vh -95vw, center;
+    /* background-size: contain; */
+    border-radius: 0 0 0 150px;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+  }
+
+  .section-1 p,
+  h2,
+  h3,
+  nav li a,
+  nav li span {
+    color: #ffffffd7;
+  }
+
+  nav {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+    display: none;
+  }
+
+  nav .title {
+    color: #ffffff;
+    font-size: 1.3rem;
+  }
+
+  .menu-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu-item {
+    margin-left: 50px;
+  }
+
+  li {
+    display: flex;
+  }
+
+  li a {
+    text-decoration: none;
+  }
+
+  li:hover {
+    cursor: pointer;
+  }
+
+  li span {
+    margin: auto;
+    margin-left: 10px;
+  }
+
+  li ul {
+    position: absolute;
+    visibility: hidden;
+    margin-top: 16px;
+  }
+
+  li:hover ul {
+    visibility: visible;
+  }
+
+  li ul li {
+    padding-top: 10px;
+  }
+
+  .auth-buttons button {
+    color: white;
+    width: 100px;
+    border: none;
+    border-radius: 40px;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .auth-buttons button:nth-child(1):hover {
+    background-color: #4b5862;
+    transition: all 0.5s ease;
+  }
+
+  .auth-buttons button:nth-child(2) {
+    background-color: #ffffff;
+    color: #ff525d;
+  }
+
+  .auth-buttons button:nth-child(2):hover {
+    background-color: #ff525d;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+
+  .section-1 .main-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 70vw;
+    margin-bottom: 30px;
+  }
+
+  .section-1 .sub-heading {
+    font-size: 1.3rem;
+    width: 70vw;
+    text-align: center;
+  }
+
+  .section-1 .button__container button {
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
+  /* Section 2 */
+  /* .section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .section-2 .sub-heading {
+    padding-top: 150px;
+    font-size: 1.8rem;
+  }
+
+  .section-2 h3 {
+    font-size: 1.6rem;
+    color: #4b5862;
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  .section-2 p {
+    margin-top: 20px;
+  }
+
+  .section-2 .container {
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 100vh;
+    position: initial;
+  }
+
+  .container div:nth-child(1) {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100vw;
+    padding: 0px 40px;
+    line-height: 1.9rem;
+    text-align: center;
+  }
+
+  .container div:nth-child(2) {
+    width: 100%;
+    position: initial;
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+    /* top: 40px; */
+
+    /* right: 0; */
+    /* left: 150px; */
+  }
+
+  .container div:nth-child(1) article {
+    /* margin-top: 30px;
+    font-size: 1rem; */
+  }
+
+  .container div:nth-child(2) .illustration-desktop {
+    display: none;
+  }
+
+  .container div:nth-child(2) .illustration-mobile {
+    margin-top: 50px;
+    display: initial;
+    height: 400px;
+  }
 }
