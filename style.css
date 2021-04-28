@@ -318,13 +318,10 @@ h3 {
   height: 80vh;
 }
 
-footer {
-  background-color: #25252d;
-  border-radius: 0 70px 0 0;
-}
-
 /* Footer */
 .footer {
+  background-color: #25252d;
+  border-radius: 0 70px 0 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -667,6 +664,7 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 80px;
+    border-radius: 0 100px 0 0;
   }
 
   .footer h3 {
