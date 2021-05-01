@@ -86,7 +86,7 @@ nav li span {
 }
 
 .nav-links:hover {
-  color: var(--brightred);
+  color: var(--darkgray);
   transition: all 0.2s ease-out;
 }
 
@@ -149,7 +149,7 @@ nav li span {
   flex-direction: row;
   align-items: center;
   list-style: none;
-  width: 30%;
+  /* width: 30%; */
 }
 
 .auth-btns li:nth-child(1) {
@@ -514,6 +514,9 @@ h3 {
   Mobile View
   */
 @media screen and (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
   .section-1 {
     background-image: url(/images/bg-pattern-intro.svg),
       linear-gradient(to right, #ff8f70, #ff3d54);
@@ -537,8 +540,23 @@ h3 {
     visibility: hidden;
   }
 
+  .navbar {
+    /* display: none; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 80px;
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
+    /* background-color: #3f4164; */
+  }
+
   .nav-container {
     position: relative;
+    width: 100%;
   }
 
   .nav-menu {
@@ -561,7 +579,7 @@ h3 {
   }
 
   .nav-menu.active {
-    background: var(--darkgray);
+    background: #3f4164;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -570,6 +588,7 @@ h3 {
   .nav-links {
     text-align: center;
     line-height: 5rem;
+    /* width: 104vw; */
     width: 100vw;
     display: block;
   }
@@ -578,10 +597,6 @@ h3 {
     background-color: var(--brightred);
     color: var(--white);
     transition: all 0.4s ease-out;
-  }
-
-  .navbar {
-    /* width: 100%; */
   }
 
   .nav-links-btn {
@@ -809,7 +824,7 @@ h3 {
   */
 
   .section-3 {
-    min-height: 70vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     border-radius: 0 150px 0 150px;
@@ -835,7 +850,7 @@ h3 {
     font-size: 1.1rem;
     margin-top: 15px;
     color: #ffffffd7;
-    padding: 10px 10px;
+    padding: 10px 40px;
     line-height: 2rem;
   }
 
